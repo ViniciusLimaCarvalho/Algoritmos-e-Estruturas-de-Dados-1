@@ -77,5 +77,5 @@ int tamanho(lista *l){
 
     if(listaVazia(l) == 0) return 0;
 
-    No *n 
+    No *n = (No *) malloc (sizeof(No));
 }
