@@ -2,14 +2,10 @@
 #include<stdlib.h>
 #include"listarecursiva.h"
 
-
-
 typedef struct no{
     int valor;
     struct no* prox;
 }No;
-
-typedef struct No* lista;
 
 lista *Criar(){
     lista *l = (lista*)malloc(sizeof(lista));
@@ -86,7 +82,7 @@ int imprime(lista *l){
 
     printf("%d; ",n->valor);
 
-    imprime(n->prox);
+    imprime(&(n->prox));
 }
 
 int tamanho(lista *l){

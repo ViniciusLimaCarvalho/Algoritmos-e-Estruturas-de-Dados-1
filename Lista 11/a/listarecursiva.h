@@ -1,4 +1,4 @@
-typedef struct No* lista;
+typedef struct no* lista;
 
 lista *Criar();
 
