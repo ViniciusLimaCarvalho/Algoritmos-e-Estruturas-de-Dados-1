@@ -105,3 +105,26 @@ int ultimoElemento (lista *l, int *valor){
 
     return ultimoElemento(&(n->prox), valor);
 }
+
+int somaElementos(lista *l){
+    No *n = *l;
+
+    if(n == NULL) return 0;
+
+
+
+    return n->valor + somaElementos(&(n->prox));
+}
+
+void ExibirReverso(lista *l) {
+    No *atual = *l;
+
+    if (atual == NULL)
+        return;
+
+
+    ExibirReverso(&(atual->prox));
+
+
+    printf("%d ", atual->valor);
+}

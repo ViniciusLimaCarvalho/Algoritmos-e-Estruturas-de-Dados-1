@@ -19,3 +19,4 @@ void mostrar(lista *l);
 int tamanho(lista *l);
 
 int ultimoElemento (lista *l, int *valor);
+int somaElementos(lista *l);

@@ -105,3 +105,14 @@ int ultimoElemento (lista *l, int *valor){
 
     return ultimoElemento(&(n->prox), valor);
 }
+
+int somaElementos(lista *l){
+    No *n = *l;
+
+    if(n == NULL) return 0;
+
+
+
+    return n->valor + somaElementos(&(n->prox));
+}
+

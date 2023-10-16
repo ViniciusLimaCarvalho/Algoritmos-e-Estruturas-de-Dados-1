@@ -19,6 +19,9 @@ int main(){
 
     printf("O ultimo elemento eh %d",*num);
 
+    int soma = somaElementos(l);
+    printf("%d",soma);
+
     system("pause");
     return 0;
 
