@@ -24,14 +24,17 @@ int inserirInicio(lista *l, int it){
 }
 
 int inserirFim(lista *l, int it){
-    if(l == NULL) return 2;
-    No *no = (*l);
-    while(no->prox != NULL){
-        no = no->prox;
-    }
-
-    no->prox->valor = it;
-    no->prox->prox = NULL;
+    if (l == NULL)
+    return 2;
+    if (listaVazia(l) == 0)
+        return inserirInicio(l,it);
+    No *noLista = *l;
+    while (noLista->prox != NULL)
+        noLista = noLista->prox;
+    No *no = (No*)malloc(sizeof(No));
+    no->valor = it;
+    no->prox = noLista->prox;
+    noLista->prox = no;
     return 0;
 }
 
@@ -76,7 +79,7 @@ void mostrar(lista *l){
 }
 
 int imprime(lista *l){
-    if(l == NULL) return 0;;
+    if(*l == NULL) return 0;
 
     No *n = (*l);
 
