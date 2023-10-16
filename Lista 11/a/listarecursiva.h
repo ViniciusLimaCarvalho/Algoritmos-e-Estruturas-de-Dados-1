@@ -15,5 +15,6 @@ int listaVazia(lista *l);
 int buscarItem(lista *l, int it);
 int buscarPosicao(lista *l, int pos, int *it);
 
-int mostrar(lista *l);
+void mostrar(lista *l);
+int imprime(lista *l);
 int tamanho(lista *l);
