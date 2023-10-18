@@ -16,5 +16,6 @@ int tamanho(Fila *f);
 
 int filaVazia(Fila *f);
 int filaCheia(Fila *f);
+void mostrar(Fila *f);
 
 #endif // FILA_H_INCLUDED

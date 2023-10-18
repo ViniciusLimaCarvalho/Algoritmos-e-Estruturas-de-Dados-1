@@ -16,6 +16,7 @@ int tamanho(Fila *f);
 
 int filaVazia(Fila *f);
 int filaCheia(Fila *f);
+void mostrar(Fila *f);
 
 int intercalarFilas (Fila *f, Fila *r, Fila *intercalada);
 
