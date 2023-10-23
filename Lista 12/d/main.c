@@ -20,7 +20,7 @@ int main(){
         case 1:
             system("cls");
             printf("A senha gerada eh %d.\n", senha);
-            inserir(f,aux);
+            inserir(f,senha);
             senha++;
             break;
 
@@ -28,8 +28,7 @@ int main(){
             system("cls");
             printf("O primeiro paciente na fila sera removido.\n");
             remover(f,&num);
-            consultar(f,&num);
-            printf("O proximo a ser atendido eh %d\n",num);
+            printf("O proximo a ser atendido eh %d\n",++num);
             break;
         }
 
