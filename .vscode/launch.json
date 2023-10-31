@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Lista 13/d/a.exe",
+            "program": "${workspaceFolder}/a.exe",
             "args": [],
             "stopAtEntry": true,
             "cwd": "${fileDirname}",
